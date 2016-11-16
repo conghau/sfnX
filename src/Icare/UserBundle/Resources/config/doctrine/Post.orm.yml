@@ -1,0 +1,24 @@
+Icare\UserBundle\Entity\Post:
+  type: entity
+  table: post
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    name:
+      type: string
+      length: 255
+    title:
+      type: string
+      length: 255
+    content:
+      type: text
+    created_at:
+      type: datetime
+    updated_at:
+      type: datetime
+  oneToMany:
+    comment:
+      targetEntity: Comment
+      mappedBy: post
