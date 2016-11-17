@@ -1,3 +1,0 @@
-icare_user_homepage:
-    path:     /
-    defaults: { _controller: IcareUserBundle:Default:index }
